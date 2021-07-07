@@ -100,8 +100,6 @@ label{
     padding: 12px;
     border-radius: 4px;
     resize: vertical;
-<<<<<<< HEAD
-=======
 }
 
 .profile-radio-content{
@@ -109,7 +107,7 @@ label{
     flex-direction: row;
 }
 
-.profile-radio-content > label{
+.profile-radio-content > label {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -119,5 +117,5 @@ label{
     width: 40px;
     border-radius: 50%;
     margin-left: 12px;
->>>>>>> UC3_Specify_Profile_Pic
 }
+
