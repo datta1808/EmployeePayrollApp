@@ -1,12 +1,10 @@
-class EmployeePayrollData {
-    
+class EmployeePayrollData{
     get id(){
         return this._id;
     }
     set id(id){
         this._id = id;
     }
-
     get name(){
         return this._name;
     }
@@ -17,42 +15,36 @@ class EmployeePayrollData {
         else
             throw 'Name is Invalid!'
     }
-
     get profilePic(){
         return this._profilePic;
     }
     set profilePic(profilePic){
         this._profilePic = profilePic;
     }
-
     get gender(){
         return this._gender;
     }
     set gender(gender){
         this._gender = gender;
     }
-
     get department(){
         return this._department;
     }
     set department(department){
         this._department = department;
     }
-
     get salary(){
         return this._salary;
     }
     set salary(salary){
         this._salary=salary;
     }
-
     get notes(){
         return this._notes;
     }
     set notes(notes){
         this._notes = notes;
     }
-
     get startDate(){
         return this._startDate;
     }
@@ -64,10 +56,7 @@ class EmployeePayrollData {
     }
 
     toString() {
-        const options = {
-            year: 'numeric', month: 'numeric', day: 'numeric'
-        };
-        const empDate = !this.startDate ? "undefined" : this.startDate.toLocaleDateString("en-IN", options);
-        return "name = " + this.name + ", profilePic = " + this.profilePic + ", salary = " + this.salary + ", gender = " + this.gender + ", department = " + this.department + ", startDate = " + empDate + ", notes= " + this.notes;
+        const empDate = formatDate(this.startDate);
+        return "id = "+this.id+", name = " + this.name + ", profilePic = " + this.profilePic + ", salary = " + this.salary + ", gender = " + this.gender + ", department = " + this.department + ", startDate = " + empDate + ", notes= " + this.notes;
     }
 }
