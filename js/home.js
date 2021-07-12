@@ -3,6 +3,7 @@ window.addEventListener('DOMContentLoaded', () => {
     employeePayrollList = getEmployeePayrollDataFromStorage();
     document.querySelector(".emp-count").textContent = employeePayrollList.length;
     createInnerHtml();
+    localStorage.removeItem('editEmp');
 });
 
 const getEmployeePayrollDataFromStorage = () => {
@@ -53,7 +54,7 @@ const remove = (node) => {
     let employeePayrollData = employeePayrollList.find(emp => emp._id == node.id);
     if(!employeePayrollData) return;
     const index = employeePayrollList.map(emp => emp._id).indexOf(employeePayrollData._id);
-    employeePayrollList.splice(index,1);
+    employeePayrollList.splice(index, 1);
     localStorage.setItem("EmployeePayrollList", JSON.stringify(employeePayrollList));
     document.querySelector(".emp-count").textContent = employeePayrollList.length;
     createInnerHtml();
