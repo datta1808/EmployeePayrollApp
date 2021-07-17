@@ -27,31 +27,6 @@
       "_notes": "undefined"
     },
     {
-      "_name": "Amarpa Shashanka Keerthi Kumar",
-      "_gender": "female",
-      "_department": [
-        "Sales"
-      ],
-      "_salary": "400000",
-      "_startDate": "29 Oct 2019",
-      "_note": "",
-      "_profilePic": "../assets/profile-images/Ellipse -1.png",
-      "id": 3
-    },
-    {
-      "id": "20",
-      "_name": "Datta Bagale",
-      "_profilePic": "../assets/profile-images/Ellipse -3.png",
-      "_gender": "male",
-      "_department": [
-        "HR",
-        "Sales"
-      ],
-      "_salary": "500000",
-      "_notes": "",
-      "_startDate": "2020-07-14T18:30:00.000Z"
-    },
-    {
       "id": "21",
       "_name": "Datta Bagale",
       "_profilePic": "../assets/profile-images/Ellipse -3.png",
